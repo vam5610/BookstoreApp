@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "The Great Gatsby",
+    "title": "A Novel by F. Scott Fitzgerald",
+    "price": 10.99,
+    "category": "Classic",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 2,
+    "name": "1984",
+    "title": "A Dystopian Novel by George Orwell",
+    "price": 8.99,
+    "category": "Dystopian",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 3,
+    "name": "To Kill a Mockingbird",
+    "title": "A Novel by Harper Lee",
+    "price": 12.49,
+    "category": "Classic",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 4,
+    "name": "Pride and Prejudice",
+    "title": "A Novel by Jane Austen",
+    "price": 11.99,
+    "category": "Free",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 5,
+    "name": "Moby Dick",
+    "title": "A Novel by Herman Melville",
+    "price": 13.50,
+    "category": "Adventure",
+    "image":"https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 6,
+    "name": "The Catcher in the Rye",
+    "title": "A Novel by J.D. Salinger",
+    "price": 9.99,
+    "category": "Free",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 7,
+    "name": "The Hobbit",
+    "title": "A Fantasy Novel by J.R.R. Tolkien",
+    "price": 14.99,
+    "category": "Fantasy",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 8,
+    "name": "Brave New World",
+    "title": "A Dystopian Novel by Aldous Huxley",
+    "price": 7.49,
+    "category": "Dystopian",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 9,
+    "name": "War and Peace",
+    "title": "A Novel by Leo Tolstoy",
+    "price": 16.99,
+    "category": "Historical",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  },
+  {
+    "id": 10,
+    "name": "The Odyssey",
+    "title": "An Epic Poem by Homer",
+    "price": 18.00,
+    "category": "Free",
+    "image": "https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
+  }
+]
