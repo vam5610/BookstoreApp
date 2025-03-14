@@ -1,8 +1,30 @@
-import React, { useEffect, useState } from 'react'
+import React, { use, useEffect, useState } from 'react'
 import Login from './Login';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../Context/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Navbar = () => {
+  const [authUser,setAuthUser]=useAuth()
+  console.log(authUser);
+  const navigate= useNavigate();
+
+  const handleLogout=()=>{
+    try {
+      setAuthUser({
+        ...authUser,
+        user:null
+      })
+      localStorage.removeItem("User")
+      toast.success("Logout Successfully")
+      navigate("/")
+      window.location.reload();
+    } catch (error) {
+      toast.error("Error: "+ error.message)
+    }
+  }
+
+
   const [sticky,setSticky]= useState(false);
   const [theme,setTheme]= useState(localStorage.getItem("theme")?localStorage.getItem("theme"):"light")
   const element= document.documentElement;
@@ -59,7 +81,7 @@ const Navbar = () => {
         {navItems}
       </ul>
     </div>
-    <a className="font-bold cursor-pointer text-xl">BookStore</a>
+    <a href='/' className="font-bold cursor-pointer text-xl">BookStore</a>
   </div>
 
   <div className='navbar-end flex items-center  font-medium gap-2'>
@@ -103,7 +125,7 @@ const Navbar = () => {
 </label>
   </div>
   <div className="">
-    <Link to="/login"><button className='bg-pink-500 px-2 py-1 hover:bg-pink-700 rounded-lg'>Login</button></Link>
+    <Link to="/login">{authUser?<button onClick={handleLogout} className='bg-red-600 px-2 py-1 hover:bg-pink-700 rounded-lg'>Logout</button>:<button className='bg-pink-500 px-2 py-1 hover:bg-pink-700 rounded-lg'>Login</button>}</Link>
   </div>
   
   </div>

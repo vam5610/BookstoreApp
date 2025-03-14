@@ -14,7 +14,7 @@ function Banner() {
 </label>
 <div className="validator-hint hidden">Enter valid email address</div>
         </div>
-        <button className="btn btn-secondary mt-6">Join now</button>
+        <button className="btn btn-secondary mt-6">Get started</button>
         
       </div>
       <div className='order-1 w-full md:w-1/2'>
